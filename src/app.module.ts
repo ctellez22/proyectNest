@@ -36,6 +36,7 @@ import { SponsorEntity } from './sponsor/sponsor.entity/sponsor.entity';
         SponsorEntity,
       ],
       synchronize: true,
+      dropSchema: true,
       logging: true,
     }),
     MuseumModule,
