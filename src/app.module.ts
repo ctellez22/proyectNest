@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { MuseumModule } from './museum/museum.module';
@@ -15,22 +16,36 @@ import { ImageEntity } from './image/image.entity/image.entity';
 import { MovementEntity } from './movement/movement.entity/movement.entity';
 import { MuseumEntity } from './museum/museum.entity/museum.entity';
 import { SponsorEntity } from './sponsor/sponsor.entity/sponsor.entity';
-import { TypeOrmModule } from '@nestjs/typeorm';
 
 
 @Module({
-  imports: [MuseumModule, ExhibitionModule, ArtworkModule, ArtistModule, SponsorModule, ImageModule, MovementModule, 
-   TypeOrmModule.forRoot({
-     type: 'postgres',
-     host: 'localhost',
-     port: 5432,
-     username: 'postgres',
-     password: 'postgres',
-     database: 'museum',
-     entities: [ArtistEntity, ArtworkEntity, ExhibitionEntity, ImageEntity, MovementEntity, MuseumEntity, SponsorEntity],
-     dropSchema: true,
-     synchronize: true
-   })],
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'postgres',
+      host: 'localhost',
+      port: 5432,
+      username: 'camilotellez',
+      database: 'museum',
+      entities: [
+        ArtistEntity,
+        ArtworkEntity,
+        ExhibitionEntity,
+        ImageEntity,
+        MovementEntity,
+        MuseumEntity,
+        SponsorEntity,
+      ],
+      synchronize: true,
+      logging: true,
+    }),
+    MuseumModule,
+    ExhibitionModule,
+    ArtworkModule,
+    ArtistModule,
+    SponsorModule,
+    ImageModule,
+    MovementModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

@@ -3,7 +3,7 @@
 import { ArtistEntity } from "../../artist/artist.entity/artist.entity";
 import { Column, Entity, JoinTable, ManyToMany, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity()
+@Entity('movements')
 export class MovementEntity {
    @PrimaryGeneratedColumn("uuid")
    id: string;

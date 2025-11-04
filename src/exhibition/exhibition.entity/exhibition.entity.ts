@@ -1,10 +1,9 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn, OneToMany } from 'typeorm';
 import { MuseumEntity } from '../../museum/museum.entity/museum.entity';
-import { OneToMany } from 'typeorm/browser/decorator/relations/OneToMany.js';
 import { ArtworkEntity } from 'src/artwork/artwork.entity/artwork.entity';
 import { SponsorEntity } from '../../sponsor/sponsor.entity/sponsor.entity';
 
-@Entity()
+@Entity('exhibitions')
 export class ExhibitionEntity {
     @PrimaryGeneratedColumn("uuid")
     id: string;

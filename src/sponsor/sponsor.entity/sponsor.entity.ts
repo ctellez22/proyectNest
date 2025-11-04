@@ -3,7 +3,7 @@
 import { ExhibitionEntity } from "../../exhibition/exhibition.entity/exhibition.entity";
 import { Column, Entity, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity()
+@Entity('sponsors')
 export class SponsorEntity {
    @PrimaryGeneratedColumn("uuid")
    id: string;
