@@ -4,7 +4,7 @@ import { ArtworkEntity } from "../../artwork/artwork.entity/artwork.entity";
 import { MovementEntity } from "../../movement/movement.entity/movement.entity";
 import { Column, Entity, ManyToMany, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity()
+@Entity('artists')
 export class ArtistEntity {
    @PrimaryGeneratedColumn("uuid")
    id: string;

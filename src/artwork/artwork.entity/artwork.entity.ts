@@ -6,7 +6,7 @@ import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "ty
 import { ImageEntity } from "../../image//image.entity/image.entity";
 import { ArtistEntity } from "../../artist/artist.entity/artist.entity";
 
-@Entity()
+@Entity('artworks')
 export class ArtworkEntity {
 
    @PrimaryGeneratedColumn("uuid")
