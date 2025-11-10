@@ -1,3 +1,10 @@
+## Ejemplo de uso de la API con Postman
+
+A continuación se muestra un ejemplo de cómo agregar un museo usando Postman:
+
+![Ejemplo Postman Add Museum](./docs/postman_add_museum.png)
+
+Puedes utilizar la colección de endpoints para probar la API, agregar museos y consultar los resultados.
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
