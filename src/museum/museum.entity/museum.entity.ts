@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { ArtworkEntity } from "../../artwork/artwork.entity/artwork.entity";
 import { ExhibitionEntity } from "../../exhibition/exhibition.entity/exhibition.entity";
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
@@ -8,8 +7,11 @@ export class MuseumEntity {
  @PrimaryGeneratedColumn('uuid')
  id: string;
 
- @Column()
- name: string;
+@Column({ nullable: true })
+foundedBefore: number;
+
+@Column()
+name: string;
  
  @Column()
  description: string;

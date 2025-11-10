@@ -1,0 +1,22 @@
+INSERT INTO museum (id, name, description, address, city, image, foundedBefore)
+VALUES
+  ('1', 'Museo del Oro', 'Museo de piezas de oro precolombinas', 'Calle 1 #2-3', 'Bogotá', 'https://picsum.photos/200/200?1', 1939),
+  ('2', 'Museo Nacional', 'Museo de historia y arte', 'Carrera 7 #28-66', 'Bogotá', 'https://picsum.photos/200/200?2', 1823),
+  ('3', 'Museo de Arte Moderno', 'Arte moderno colombiano', 'Calle 24 #6-00', 'Bogotá', 'https://picsum.photos/200/200?3', 1963),
+  ('4', 'Museo de Antioquia', 'Arte y cultura antioqueña', 'Cra 52 #52-43', 'Medellín', 'https://picsum.photos/200/200?4', 1881),
+  ('5', 'Museo El Castillo', 'Museo de arte decorativo', 'Calle 9 Sur #32-269', 'Medellín', 'https://picsum.photos/200/200?5', 1971),
+  ('6', 'Museo de Arte Moderno de Medellín', 'Arte contemporáneo', 'Carrera 44 #19A-100', 'Medellín', 'https://picsum.photos/200/200?6', 1978),
+  ('7', 'Museo de la Tertulia', 'Arte moderno y contemporáneo', 'Avenida Colombia #5-105', 'Cali', 'https://picsum.photos/200/200?7', 1956),
+  ('8', 'Museo La Merced', 'Arte religioso', 'Carrera 4 #6-59', 'Cali', 'https://picsum.photos/200/200?8', 1536),
+  ('9', 'Museo del Caribe', 'Cultura caribeña', 'Calle 36 #46-66', 'Barranquilla', 'https://picsum.photos/200/200?9', 2009),
+  ('10', 'Museo Romántico', 'Historia de Barranquilla', 'Calle 68 #54-10', 'Barranquilla', 'https://picsum.photos/200/200?10', 1986),
+  ('11', 'Museo Naval del Caribe', 'Historia naval', 'Calle San Juan de Dios #3-62', 'Cartagena', 'https://picsum.photos/200/200?11', 1992),
+  ('12', 'Museo Histórico de Cartagena', 'Historia colonial', 'Plaza de Bolívar', 'Cartagena', 'https://picsum.photos/200/200?12', 1924),
+  ('13', 'Museo del Oro Zenú', 'Cultura Zenú', 'Cra 4 #33-26', 'Cartagena', 'https://picsum.photos/200/200?13', 1982),
+  ('14', 'Museo de Arte de Pereira', 'Arte contemporáneo', 'Av. Las Américas #19-88', 'Pereira', 'https://picsum.photos/200/200?14', 1999),
+  ('15', 'Museo Rayo', 'Arte latinoamericano', 'Roldanillo', 'https://picsum.photos/200/200?15', 1981),
+  ('16', 'Museo Arqueológico', 'Arqueología regional', 'Calle 5 #6-63', 'San Agustín', 'https://picsum.photos/200/200?16', 1939),
+  ('17', 'Museo del Oro Quimbaya', 'Cultura Quimbaya', 'Avenida Bolívar #40N-80', 'Armenia', 'https://picsum.photos/200/200?17', 1986),
+  ('18', 'Museo de Arte Moderno de Bucaramanga', 'Arte moderno', 'Calle 37 #26-16', 'Bucaramanga', 'https://picsum.photos/200/200?18', 1989),
+  ('19', 'Museo Guane', 'Historia y arqueología', 'Carrera 6 #4-30', 'Barichara', 'https://picsum.photos/200/200?19', 1977),
+  ('20', 'Museo del Oro Calima', 'Cultura Calima', 'Carrera 10 #8-43', 'Calima', 'https://picsum.photos/200/200?20', 1960);

@@ -16,6 +16,7 @@ import { ImageEntity } from './image/image.entity/image.entity';
 import { MovementEntity } from './movement/movement.entity/movement.entity';
 import { MuseumEntity } from './museum/museum.entity/museum.entity';
 import { SponsorEntity } from './sponsor/sponsor.entity/sponsor.entity';
+import { MuseumArtworkModule } from './museum-artwork/museum-artwork.module';
 
 
 @Module({
@@ -46,6 +47,7 @@ import { SponsorEntity } from './sponsor/sponsor.entity/sponsor.entity';
     SponsorModule,
     ImageModule,
     MovementModule,
+    MuseumArtworkModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn, OneToMany } from 'typeorm';
 import { MuseumEntity } from '../../museum/museum.entity/museum.entity';
-import { ArtworkEntity } from 'src/artwork/artwork.entity/artwork.entity';
+import { ArtworkEntity } from '../../artwork/artwork.entity/artwork.entity';
 import { SponsorEntity } from '../../sponsor/sponsor.entity/sponsor.entity';
 
 @Entity('exhibitions')
